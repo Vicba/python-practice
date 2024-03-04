@@ -10,8 +10,6 @@
 
 3. When to use this?
 
-   Use the Chain of Responsibility pattern when:
-
    You have multiple objects that can handle a request.
    The set of handlers and their order may change dynamically.
    You want to decouple the sender and receiver objects.
