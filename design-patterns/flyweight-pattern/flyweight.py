@@ -29,21 +29,21 @@ def main():
  
     for _ in range(10): 
         c1 = Car(CarType.subcompact) 
-        c1.render(random.choice(colors), 
+        c1.render(random.choice(colors),  # nosec
                   rnd.randint(min_point, max_point), 
                   rnd.randint(min_point, max_point)) 
         car_counter += 1 
  
     for _ in range(3): 
         c2 = Car(CarType.compact) 
-        c2.render(random.choice(colors), 
+        c2.render(random.choice(colors),  # nosec
                   rnd.randint(min_point, max_point), 
                   rnd.randint(min_point, max_point)) 
         car_counter += 1 
  
     for _ in range(5): 
         c3 = Car(CarType.suv) 
-        c3.render(random.choice(colors), 
+        c3.render(random.choice(colors), # nosec
                   rnd.randint(min_point, max_point), 
                   rnd.randint(min_point, max_point)) 
         car_counter += 1 

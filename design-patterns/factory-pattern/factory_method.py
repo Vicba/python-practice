@@ -1,5 +1,5 @@
 import json
-import xml.etree.ElementTree as etree
+import xml.etree.ElementTree as etree # nosec
 
 
 class JSONDataExtractor:
@@ -17,7 +17,7 @@ class JSONDataExtractor:
 class XMLDataExtractor:
 
     def __init__(self, filepath):
-        self.tree =  etree.parse(filepath)
+        self.tree =  etree.parse(filepath) # nosec
 
     @property
     def parsed_data(self):

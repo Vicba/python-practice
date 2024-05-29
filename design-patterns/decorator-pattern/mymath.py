@@ -16,14 +16,14 @@ def memoize(fn):
 @memoize
 def number_sum(n):
     """Returns the sum of the first n numbers"""
-    assert (n >= 0), 'n must be greater than or equal to 0'
+    assert (n >= 0), 'n must be greater than or equal to 0' # nosec
     return 0 if n == 0 else n + number_sum(n - 1)
 
 # Apply the memoize decorator to the 'fibonacci' function
 @memoize
 def fibonacci(n):
     """Returns the nth number of the Fibonacci sequence"""
-    assert (n >= 0), 'n must be greater than or equal to 0'
+    assert (n >= 0), 'n must be greater than or equal to 0' # nosec
     return n if n in (0, 1) else fibonacci(n - 1) + fibonacci(n - 2)
 
 

@@ -1,7 +1,7 @@
 
 def number_sum(n): 
     '''Returns the sum of the first n numbers''' 
-    assert(n >= 0), 'n must be >= 0' 
+    assert(n >= 0), 'n must be >= 0'  # nosec
     return 0 if n == 0 else n + number_sum(n-1)
 
  

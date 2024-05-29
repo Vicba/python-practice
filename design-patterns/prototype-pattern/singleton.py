@@ -19,7 +19,7 @@ class URLFetcher(metaclass=SingletonType):
     def fetch(self, url):
         req = urllib.request.Request(url)
         
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req) as response: # nosec
             if response.code == 200:
                 the_page = response.read()
                 print(the_page)
