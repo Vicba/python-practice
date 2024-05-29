@@ -25,7 +25,9 @@ class Buyer:
     def drive_car(self, item):
         item.drive()
 
+
 if __name__ == "__main__":
     pass
+
     
 
