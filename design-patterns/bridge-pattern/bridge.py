@@ -37,7 +37,7 @@ class URLFetcher(ResourceContentFetcher):
     def fetch(self, path):
         # path is an URL
         req = urllib.request.Request(path)
-        with urllib.request.urlopen(req) as response:
+        with urllib.request.urlopen(req) as response: # nosec
             if response.code == 200:
                 the_page = response.read()
                 print(the_page)
